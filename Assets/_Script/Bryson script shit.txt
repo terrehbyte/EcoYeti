@@ -1,0 +1,127 @@
+﻿using UnityEngine;
+using System.Collections;
+using System;
+
+enum GAMESTATE
+{
+	MAINMENU,
+	GAMEPLAY,
+	GAMEOVER,
+}
+
+public class YetiRevenge : MonoBehaviour
+{
+	DateTime lastScreenshot;
+	// Use this for initialization
+	void Start ()
+	{
+		lastScreenshot = DateTime.Now;
+	}
+
+	void Update () 
+	{
+
+		if (DateTime.Now.Second - lastScreenshot.Second == 15)
+		{
+			Debug.Log("DO SHITZ");
+			spawner1.SpawnEnemy()
+			//do shit
+			//Drawsprite and shit create the skiier and shit
+		}
+	}
+
+	struct PlayerYeti
+	{
+		float playerHealth;
+		float xPos;
+		float yPos;
+		float xSpeed;
+		float ySpeed;
+		float playerPoints;
+
+		void Move()
+		{//ah shit theres other stuff to do for this instead of mapping the keys
+		}
+	}
+
+	struct BirdNest
+	{
+		float nestHealth = 3;
+		float xPos;
+		float yPos;
+		float invulTime = 3;
+		void Collided(float lastCollisionTime = 0)
+		{
+			//fuck it add this shit later
+			if ((DateTime.Now.Second - lastCollisionTime) > 3)
+			{
+				nestHealth -= 1;
+				lastCollisionTime = DateTime.Now.Second;
+				if (nestHealth = 2)
+				{
+					bool birdEgg3 = false;
+				} 
+				else if (nestHealth = 1)
+				{	
+					bool birdEgg2 = false;
+				} 
+				else if (nestHealth = 0)
+				{
+					bool birdEgg1 = false;
+				}
+			}
+		}
+	}
+	
+	//invisible shit that is the spawning point of skiers
+	struct EnemySpawner
+	{
+	float xPos;
+	float yPos;
+	float enemyNumberToSpawn;
+	float xSpeed;
+		void SpawnEnemy()
+		{
+			//createsprite at xPos,yPos
+		}
+	}
+
+	// Skiers
+	struct Enemy
+	{
+		float enemyHealth;
+		int enemySprite;
+		float xPos;
+		float yPos;
+		float xSpeed;
+		float ySpeed;
+		float points;
+	}
+
+	EnemySpawner spawner1
+		DrawSprite //()
+		xPos = //somenumber;
+		yPos = //somenumber;
+		xSpeed = //somenumber;
+			enemyNumberToSpawn = 10;
+	EnemySpawner spawner2
+		DrawSprite //(createspriteshit)
+		xPos = //somenumber;
+		yPos = //somenumber;
+		xSpeed = //somenumber;
+		enemyNumberToSpawn = 10;
+	EnemySpawner spawner3
+		DrawSprite //createspriteandshit
+		xPos = //somenumber
+		yPos = //somenumber
+		xSpeed = //butt
+		enemyNumberTospawn = 10;
+
+
+
+
+}
+	
+	// Update is called once per frame
+	
+
