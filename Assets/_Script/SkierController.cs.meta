@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: ed5a6c96a3c3a604bb0c4aebd744f705
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - skier: {fileID: 100000, guid: 181b2a2fae099c649b15e6b43a399725, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
