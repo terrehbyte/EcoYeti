@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class YetiController : MonoBehaviour
@@ -12,6 +13,9 @@ public class YetiController : MonoBehaviour
 	public GameObject SoundMaleScream4;
 	public GameObject SoundDestructable;
 	public GameObject SoundTree;
+	public long scoreCount = 0;
+	public int SkierValue = 25;
+	public Text countText;
 
     [SerializeField]
     private float rayLength = 10;
@@ -76,10 +80,17 @@ public class YetiController : MonoBehaviour
         // Yu Asakawa
     }
 
+	void Start ()
+	{
+				SetCountText ();
+		}
+
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Skier") {
 						Destroy (other.gameObject);
+						scoreCount = scoreCount + SkierValue;
+						SetCountText ();
 						if (other.gameObject.name == "ChildSkierBall(Clone)") {
 								Quaternion SpawnRotation = new Quaternion ();
 								Vector3 SpawnLocation = new Vector3 (0, 0, 0);
@@ -116,4 +127,9 @@ public class YetiController : MonoBehaviour
 				} 
     }
     #endregion
+
+	void SetCountText ()
+	{
+				countText.text = "Style: " + scoreCount.ToString ();
+		}
 }
