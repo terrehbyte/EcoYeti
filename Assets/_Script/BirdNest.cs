@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
 
@@ -6,9 +7,13 @@ public class BirdNest : MonoBehaviour {
 
 	public List<GameObject> Eggs = new List<GameObject> ();
 	public GameObject EggCrushSoundObject;
+	public NestManager MainManager;
 
 	public float nestHealth = 3;
 	public float invulTime = 3;
+
+
+
 
 	void OnCollisionEnter(Collision other)
 	{
@@ -31,19 +36,19 @@ public class BirdNest : MonoBehaviour {
 					Vector3 SpawnLocation = new Vector3(0,0,0);
 					Instantiate (EggCrushSoundObject, SpawnLocation, SpawnRotation);
 				    Destroy(Eggs[i]);
+					MainManager.EggCount--;
+					MainManager.SetCountText();
+
+					if (MainManager.EggCount <= 0)
+					{
+						Application.LoadLevel (3);
+					}
+
 				    break;
 			    }
 		    }
         }
 	}
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
