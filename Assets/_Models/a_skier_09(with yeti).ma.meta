@@ -1,0 +1,337 @@
+fileFormatVersion: 2
+guid: a90b1a8a841218140ba530dac1e16b89
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: chest
+    100004: chest 1
+    100006: fingejoint2
+    100008: fingejoint2 1
+    100010: fingejoint2 2
+    100012: fingejoint2 3
+    100014: fingejoint3
+    100016: fingejoint4
+    100018: finger1
+    100020: finger1 1
+    100022: finger2
+    100024: finger2 1
+    100026: finger3
+    100028: finger3 1
+    100030: fingerjoint3
+    100032: fingerjoint3 1
+    100034: fingerjoint3 2
+    100036: fingerjoint3 3
+    100038: fingerjoint4
+    100040: fingerjoint5
+    100042: head
+    100044: head 1
+    100046: height
+    100048: left
+    100050: left_arm_2
+    100052: left_arm_2 1
+    100054: left_foot
+    100056: left_foot1
+    100058: left_hand
+    100060: left_leg2
+    100062: left_leg2 1
+    100064: left_ski1
+    100066: left_ski_pole
+    100068: lower_arm_1
+    100070: lower_arm_1 1
+    100072: lower_arm_2
+    100074: lower_arm_2 1
+    100076: lower_leg_1
+    100078: lower_leg_1 1
+    100080: lower_leg_2
+    100082: lower_leg_2 1
+    100084: neck
+    100086: neck 1
+    100088: pelvis
+    100090: person2
+    100092: right_arm_1
+    100094: right_arm_1 1
+    100096: right_foot
+    100098: right_foot 1
+    100100: right_hand1
+    100102: right_leg1
+    100104: right_leg1 1
+    100106: right_ski
+    100108: right_ski_pole
+    100110: skier
+    100112: stomach
+    100114: stomach 1
+    100116: yeti1
+    400000: //RootNode
+    400002: chest
+    400004: chest 1
+    400006: fingejoint2
+    400008: fingejoint2 1
+    400010: fingejoint2 2
+    400012: fingejoint2 3
+    400014: fingejoint3
+    400016: fingejoint4
+    400018: finger1
+    400020: finger1 1
+    400022: finger2
+    400024: finger2 1
+    400026: finger3
+    400028: finger3 1
+    400030: fingerjoint3
+    400032: fingerjoint3 1
+    400034: fingerjoint3 2
+    400036: fingerjoint3 3
+    400038: fingerjoint4
+    400040: fingerjoint5
+    400042: head
+    400044: head 1
+    400046: height
+    400048: left
+    400050: left_arm_2
+    400052: left_arm_2 1
+    400054: left_foot
+    400056: left_foot1
+    400058: left_hand
+    400060: left_leg2
+    400062: left_leg2 1
+    400064: left_ski1
+    400066: left_ski_pole
+    400068: lower_arm_1
+    400070: lower_arm_1 1
+    400072: lower_arm_2
+    400074: lower_arm_2 1
+    400076: lower_leg_1
+    400078: lower_leg_1 1
+    400080: lower_leg_2
+    400082: lower_leg_2 1
+    400084: neck
+    400086: neck 1
+    400088: pelvis
+    400090: person2
+    400092: right_arm_1
+    400094: right_arm_1 1
+    400096: right_foot
+    400098: right_foot 1
+    400100: right_hand1
+    400102: right_leg1
+    400104: right_leg1 1
+    400106: right_ski
+    400108: right_ski_pole
+    400110: skier
+    400112: stomach
+    400114: stomach 1
+    400116: yeti1
+    2300000: chest
+    2300002: chest 1
+    2300004: fingejoint2
+    2300006: fingejoint2 1
+    2300008: fingejoint2 2
+    2300010: fingejoint2 3
+    2300012: fingejoint3
+    2300014: fingejoint4
+    2300016: finger1
+    2300018: finger1 1
+    2300020: finger2
+    2300022: finger2 1
+    2300024: finger3
+    2300026: finger3 1
+    2300028: fingerjoint3
+    2300030: fingerjoint3 1
+    2300032: fingerjoint3 2
+    2300034: fingerjoint3 3
+    2300036: fingerjoint4
+    2300038: fingerjoint5
+    2300040: head
+    2300042: head 1
+    2300044: height
+    2300046: left_arm_2
+    2300048: left_arm_2 1
+    2300050: left_foot
+    2300052: left_foot1
+    2300054: left_leg2
+    2300056: left_leg2 1
+    2300058: left_ski1
+    2300060: left_ski_pole
+    2300062: lower_arm_1
+    2300064: lower_arm_1 1
+    2300066: lower_arm_2
+    2300068: lower_arm_2 1
+    2300070: lower_leg_1
+    2300072: lower_leg_1 1
+    2300074: lower_leg_2
+    2300076: lower_leg_2 1
+    2300078: neck
+    2300080: neck 1
+    2300082: pelvis
+    2300084: person2
+    2300086: right_arm_1
+    2300088: right_arm_1 1
+    2300090: right_foot
+    2300092: right_foot 1
+    2300094: right_leg1
+    2300096: right_leg1 1
+    2300098: right_ski
+    2300100: right_ski_pole
+    2300102: stomach
+    2300104: stomach 1
+    3300000: chest
+    3300002: chest 1
+    3300004: fingejoint2
+    3300006: fingejoint2 1
+    3300008: fingejoint2 2
+    3300010: fingejoint2 3
+    3300012: fingejoint3
+    3300014: fingejoint4
+    3300016: finger1
+    3300018: finger1 1
+    3300020: finger2
+    3300022: finger2 1
+    3300024: finger3
+    3300026: finger3 1
+    3300028: fingerjoint3
+    3300030: fingerjoint3 1
+    3300032: fingerjoint3 2
+    3300034: fingerjoint3 3
+    3300036: fingerjoint4
+    3300038: fingerjoint5
+    3300040: head
+    3300042: head 1
+    3300044: height
+    3300046: left_arm_2
+    3300048: left_arm_2 1
+    3300050: left_foot
+    3300052: left_foot1
+    3300054: left_leg2
+    3300056: left_leg2 1
+    3300058: left_ski1
+    3300060: left_ski_pole
+    3300062: lower_arm_1
+    3300064: lower_arm_1 1
+    3300066: lower_arm_2
+    3300068: lower_arm_2 1
+    3300070: lower_leg_1
+    3300072: lower_leg_1 1
+    3300074: lower_leg_2
+    3300076: lower_leg_2 1
+    3300078: neck
+    3300080: neck 1
+    3300082: pelvis
+    3300084: person2
+    3300086: right_arm_1
+    3300088: right_arm_1 1
+    3300090: right_foot
+    3300092: right_foot 1
+    3300094: right_leg1
+    3300096: right_leg1 1
+    3300098: right_ski
+    3300100: right_ski_pole
+    3300102: stomach
+    3300104: stomach 1
+    4300000: height
+    4300002: pelvis
+    4300004: stomach
+    4300006: chest
+    4300008: left_arm_2
+    4300010: lower_arm_2
+    4300012: left_ski_pole
+    4300014: right_arm_1
+    4300016: lower_arm_1
+    4300018: right_ski_pole
+    4300020: neck
+    4300022: head
+    4300024: right_leg1
+    4300026: lower_leg_1
+    4300028: right_foot
+    4300030: right_ski
+    4300032: left_leg2
+    4300034: lower_leg_2
+    4300036: left_foot
+    4300038: left_ski1
+    4300040: person2
+    4300042: stomach
+    4300044: chest
+    4300046: head
+    4300048: neck
+    4300050: right_arm_1
+    4300052: lower_arm_1
+    4300054: finger3
+    4300056: fingejoint4
+    4300058: fingerjoint4
+    4300060: finger2
+    4300062: fingejoint3
+    4300064: fingerjoint5
+    4300066: finger1
+    4300068: fingejoint2
+    4300070: fingerjoint3
+    4300072: left_arm_2
+    4300074: lower_arm_2
+    4300076: finger1
+    4300078: fingejoint2
+    4300080: fingerjoint3
+    4300082: finger2
+    4300084: fingejoint2
+    4300086: fingerjoint3
+    4300088: finger3
+    4300090: fingejoint2
+    4300092: fingerjoint3
+    4300094: left_leg2
+    4300096: lower_leg_2
+    4300098: left_foot1
+    4300100: right_leg1
+    4300102: lower_leg_1
+    4300104: right_foot
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

@@ -8,6 +8,7 @@ public class MotherSkierController : MonoBehaviour {
 	public Vector3 CurrentPosition;
 	public GameObject SkierSpawn;
 	public int ChildrenPerSpawn;
+	public GameObject SoundTree;
 	
 	
 	void OnTriggerEnter (Collider other) 
@@ -33,6 +34,17 @@ public class MotherSkierController : MonoBehaviour {
 			}
 		}	
 	} 
+
+	void OnCollisionEnter (Collision other)
+	{
+		if (other.gameObject.tag == "Tree") {
+			Quaternion SpawnRotation = new Quaternion ();
+			Vector3 SpawnLocation = new Vector3 (0, 0, 0);
+			Instantiate (SoundTree, SpawnLocation, SpawnRotation);
+		} 
+		
+		
+	}
 	
 }
 

@@ -10,6 +10,8 @@ public class YetiController : MonoBehaviour
 	public GameObject SoundMaleScream2;
 	public GameObject SoundMaleScream3;
 	public GameObject SoundMaleScream4;
+	public GameObject SoundDestructable;
+	public GameObject SoundTree;
 
     private float rayLength = 10;
 
@@ -75,50 +77,42 @@ public class YetiController : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Skier")
-        {
-            Destroy(other.gameObject);
-			if (other.gameObject.name == "ChildSkierBall(Clone)")
-			{
-				Quaternion SpawnRotation = new Quaternion();
-				Vector3 SpawnLocation = new Vector3(0,0,0);
-				Instantiate (SoundKidScream, SpawnLocation, SpawnRotation);
-			}
-			else if (other.gameObject.name == "MotherSkierBall(Clone)")
-			{
-				Quaternion SpawnRotation = new Quaternion();
-				Vector3 SpawnLocation = new Vector3(0,0,0);
-				Instantiate (SoundMomScream, SpawnLocation, SpawnRotation);
-			}
-			else
-			{
-				int RandomScream = Random.Range (1,5);
-				if (RandomScream == 1)
-				{
-					Quaternion SpawnRotation = new Quaternion();
-					Vector3 SpawnLocation = new Vector3(0,0,0);
-					Instantiate (SoundMaleScream1, SpawnLocation, SpawnRotation);
-				}
-				else if (RandomScream == 2)
-				{
-					Quaternion SpawnRotation = new Quaternion();
-					Vector3 SpawnLocation = new Vector3(0,0,0);
-					Instantiate (SoundMaleScream2, SpawnLocation, SpawnRotation);
-				}
-				else if (RandomScream == 3)
-				{
-					Quaternion SpawnRotation = new Quaternion();
-					Vector3 SpawnLocation = new Vector3(0,0,0);
-					Instantiate (SoundMaleScream3, SpawnLocation, SpawnRotation);
-				}
-				else
-				{
-					Quaternion SpawnRotation = new Quaternion();
-					Vector3 SpawnLocation = new Vector3(0,0,0);
-					Instantiate (SoundMaleScream4, SpawnLocation, SpawnRotation);
-				}
-			}
-        }
+        if (other.gameObject.tag == "Skier") {
+						Destroy (other.gameObject);
+						if (other.gameObject.name == "ChildSkierBall(Clone)") {
+								Quaternion SpawnRotation = new Quaternion ();
+								Vector3 SpawnLocation = new Vector3 (0, 0, 0);
+								Instantiate (SoundKidScream, SpawnLocation, SpawnRotation);
+						} else if (other.gameObject.name == "MotherSkierBall(Clone)") {
+								Quaternion SpawnRotation = new Quaternion ();
+								Vector3 SpawnLocation = new Vector3 (0, 0, 0);
+								Instantiate (SoundMomScream, SpawnLocation, SpawnRotation);
+						} else {
+								int RandomScream = Random.Range (1, 5);
+								if (RandomScream == 1) {
+										Quaternion SpawnRotation = new Quaternion ();
+										Vector3 SpawnLocation = new Vector3 (0, 0, 0);
+										Instantiate (SoundMaleScream1, SpawnLocation, SpawnRotation);
+								} else if (RandomScream == 2) {
+										Quaternion SpawnRotation = new Quaternion ();
+										Vector3 SpawnLocation = new Vector3 (0, 0, 0);
+										Instantiate (SoundMaleScream2, SpawnLocation, SpawnRotation);
+								} else if (RandomScream == 3) {
+										Quaternion SpawnRotation = new Quaternion ();
+										Vector3 SpawnLocation = new Vector3 (0, 0, 0);
+										Instantiate (SoundMaleScream3, SpawnLocation, SpawnRotation);
+								} else {
+										Quaternion SpawnRotation = new Quaternion ();
+										Vector3 SpawnLocation = new Vector3 (0, 0, 0);
+										Instantiate (SoundMaleScream4, SpawnLocation, SpawnRotation);
+								}
+						}
+				} else if (other.gameObject.tag == "Destructable") {
+						Destroy (other.gameObject);
+						Quaternion SpawnRotation = new Quaternion ();
+						Vector3 SpawnLocation = new Vector3 (0, 0, 0);
+						Instantiate (SoundDestructable, SpawnLocation, SpawnRotation);
+				} 
     }
     #endregion
 }

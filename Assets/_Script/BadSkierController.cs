@@ -5,6 +5,7 @@ public class BadSkierController : MonoBehaviour {
 
 	public float XVariance;
 	public float SpeedModifier;
+	public GameObject SoundTree;
 
 	// Use this for initialization
 	void OnTriggerEnter (Collider other) 
@@ -18,5 +19,16 @@ public class BadSkierController : MonoBehaviour {
 			rigidbody.AddForce (forceVector);
 		}	
 	} 
+
+	void OnCollisionEnter (Collision other)
+	{
+		if (other.gameObject.tag == "Tree") {
+			Quaternion SpawnRotation = new Quaternion ();
+			Vector3 SpawnLocation = new Vector3 (0, 0, 0);
+			Instantiate (SoundTree, SpawnLocation, SpawnRotation);
+		} 
+
+
+	}
 }
 
