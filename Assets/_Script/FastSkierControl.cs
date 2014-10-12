@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FastSkierControl : MonoBehaviour {
+public class FastSkierControl : MonoBehaviour
+{
 	
 	public int MovementMultiplier;
 	public GameObject SoundTree;

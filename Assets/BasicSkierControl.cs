@@ -12,7 +12,5 @@ public class BasicSkierControl : MonoBehaviour {
 			Vector3 SpawnLocation = new Vector3 (0, 0, 0);
 			Instantiate (SoundTree, SpawnLocation, SpawnRotation);
 		} 
-		
-		
 	}
 }

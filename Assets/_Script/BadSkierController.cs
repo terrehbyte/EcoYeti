@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BadSkierController : MonoBehaviour {
+public class BadSkierController : MonoBehaviour
+{
 
 	public float XVariance;
 	public float SpeedModifier;

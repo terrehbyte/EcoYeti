@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MotherSkierController : MonoBehaviour {
+public class MotherSkierController : MonoBehaviour
+{
 	
 	public int ChildrenCharges;
 	public int ChanceOfSpawn;
