@@ -68,7 +68,10 @@ public class YetiController : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-
+        if (other.gameObject.tag == "Skier")
+        {
+            Destroy(other.gameObject);
+        }
     }
     #endregion
 }
