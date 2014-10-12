@@ -22,10 +22,12 @@ public class MotherSkierController : MonoBehaviour {
 				int Pregrate = Random.Range (0, 100);
 				if (Pregrate <= ChanceOfSpawn)
 				{
-					ChildrenCharges--;
+
 
 					for(int i = 0; i < ChildrenPerSpawn; i++){
 						Instantiate (SkierSpawn, CurrentPosition, SpawnRotation);
+
+				ChildrenCharges--;
 					}
 				}
 			}
