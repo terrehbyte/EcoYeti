@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class BirdNest : MonoBehaviour {
 
 	public List<GameObject> Eggs = new List<GameObject> ();
+	public GameObject EggCrushSoundObject;
 
 	public float nestHealth = 3;
 	public float invulTime = 3;
@@ -26,6 +27,9 @@ public class BirdNest : MonoBehaviour {
 		    {
 			    if (Eggs[i])
 			    {
+					Quaternion SpawnRotation = new Quaternion();
+					Vector3 SpawnLocation = new Vector3(0,0,0);
+					Instantiate (EggCrushSoundObject, SpawnLocation, SpawnRotation);
 				    Destroy(Eggs[i]);
 				    break;
 			    }

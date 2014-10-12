@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 54bcc40b66700c4418b6290dbd7ca84f
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: BLOODYYETIJUICE
+    100002: BrokenEggPiece1
+    100004: BrokenEggPiece10
+    100006: BrokenEggPiece11
+    100008: BrokenEggPiece18
+    100010: BrokenEggPiece2
+    100012: BrokenEggPiece3
+    100014: BrokenEggPiece4
+    100016: BrokenEggPiece5
+    100018: BrokenEggPiece6
+    100020: BrokenEggPiece7
+    100022: BrokenEggPiece8
+    100024: BrokenEggPiece9
+    100026: BrokenPieces
+    100028: //RootNode
+    400000: BLOODYYETIJUICE
+    400002: BrokenEggPiece1
+    400004: BrokenEggPiece10
+    400006: BrokenEggPiece11
+    400008: BrokenEggPiece18
+    400010: BrokenEggPiece2
+    400012: BrokenEggPiece3
+    400014: BrokenEggPiece4
+    400016: BrokenEggPiece5
+    400018: BrokenEggPiece6
+    400020: BrokenEggPiece7
+    400022: BrokenEggPiece8
+    400024: BrokenEggPiece9
+    400026: BrokenPieces
+    400028: //RootNode
+    2300000: BLOODYYETIJUICE
+    2300002: BrokenEggPiece1
+    2300004: BrokenEggPiece10
+    2300006: BrokenEggPiece11
+    2300008: BrokenEggPiece18
+    2300010: BrokenEggPiece2
+    2300012: BrokenEggPiece3
+    2300014: BrokenEggPiece4
+    2300016: BrokenEggPiece5
+    2300018: BrokenEggPiece6
+    2300020: BrokenEggPiece7
+    2300022: BrokenEggPiece8
+    2300024: BrokenEggPiece9
+    3300000: BLOODYYETIJUICE
+    3300002: BrokenEggPiece1
+    3300004: BrokenEggPiece10
+    3300006: BrokenEggPiece11
+    3300008: BrokenEggPiece18
+    3300010: BrokenEggPiece2
+    3300012: BrokenEggPiece3
+    3300014: BrokenEggPiece4
+    3300016: BrokenEggPiece5
+    3300018: BrokenEggPiece6
+    3300020: BrokenEggPiece7
+    3300022: BrokenEggPiece8
+    3300024: BrokenEggPiece9
+    4300000: BLOODYYETIJUICE
+    4300002: BrokenEggPiece18
+    4300004: BrokenEggPiece11
+    4300006: BrokenEggPiece10
+    4300008: BrokenEggPiece9
+    4300010: BrokenEggPiece8
+    4300012: BrokenEggPiece7
+    4300014: BrokenEggPiece6
+    4300016: BrokenEggPiece5
+    4300018: BrokenEggPiece4
+    4300020: BrokenEggPiece3
+    4300022: BrokenEggPiece2
+    4300024: BrokenEggPiece1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

@@ -13,9 +13,9 @@ public class SkierSpawner : MonoBehaviour {
 
     // Round Parameters
 	public int hazardCount;
-	public float spawnWait;
+	public float MidWaveSpawnTimeGap;
 	public float startWait;
-	public float waveWait;
+	public float TimeBetweenWaves;
 	public float decreaseWaveWait;
 	public int incrimentHazard;
 	public int WaveCounter = 1;
@@ -37,31 +37,62 @@ public class SkierSpawner : MonoBehaviour {
 		Debug.Log ("WaveManager Loaded");
 			 //Decide if new things spawn yet;
 			StartCoroutine (SpawnWaves ());
-			WaveCounter++;
 	}
 
 		void SpawnDecider()
 		{
 
-			Debug.Log("SpawnDecider Loaded");
-			int SpawnChance; //Chance for Fast
-			SpawnChance = WaveCounter * 5;
-			if (Random.Range (0, 100) <= SpawnChance) {
-				FastEnabled = true;
-			}
-			SpawnChance = WaveCounter * 4; // Chance for Bad
-			if (Random.Range (0, 100) <= SpawnChance) {
-				BadEnabled = true;
-			}
-			SpawnChance = WaveCounter * 3; // Chance for Mother
-			if (Random.Range (0,100) <= SpawnChance){
-				MotherEnabled = true;
-			}
+				Debug.Log ("SpawnDecider Loaded");
+				int SpawnChance; //Chance for Fast
+				SpawnChance = WaveCounter * 5;
+				if (Random.Range (0, 100) <= SpawnChance) {
+						FastEnabled = true;
+				}
+				SpawnChance = WaveCounter * 4; // Chance for Bad
+				if (Random.Range (0, 100) <= SpawnChance) {
+						BadEnabled = true;
+				}
+				SpawnChance = WaveCounter * 3; // Chance for Mother
+				if (Random.Range (0, 100) <= SpawnChance) {
+						MotherEnabled = true;
+				}
 
-		Debug.Log ("Mother is :" + MotherEnabled);
-		Debug.Log ("Bad is :" + BadEnabled);
-		Debug.Log ("Mother is :" + FastEnabled);
+
+				Debug.Log ("Mother is :" + MotherEnabled);
+				Debug.Log ("Bad is :" + BadEnabled);
+				Debug.Log ("Mother is :" + FastEnabled);
+
+
+				//Incriment the Wave size
+				if (WaveCounter == 5) {
+						hazardCount = hazardCount + incrimentHazard;
+				} else if (WaveCounter == 15) {
+						hazardCount = hazardCount + incrimentHazard;
+				} else if (WaveCounter == 25) {
+						hazardCount = hazardCount + incrimentHazard;
+				} else if (WaveCounter == 35) {
+						hazardCount = hazardCount + incrimentHazard;
+				} else if (WaveCounter == 45) {
+						hazardCount = hazardCount + incrimentHazard;
+				}
+
+				//Decrease time between Waves
+
+				if (WaveCounter == 15) {
+						TimeBetweenWaves = TimeBetweenWaves - decreaseWaveWait;
+				} else if (WaveCounter == 25) {
+						TimeBetweenWaves = TimeBetweenWaves - decreaseWaveWait;
+				} else if (WaveCounter == 35) {
+						TimeBetweenWaves = TimeBetweenWaves - decreaseWaveWait;
+				} else if (WaveCounter == 45) {
+						TimeBetweenWaves = TimeBetweenWaves - decreaseWaveWait;
+				}
+				if (TimeBetweenWaves < 1) {
+						TimeBetweenWaves = 1;
+				}
 		}
+
+		
 
 
 	
@@ -104,10 +135,10 @@ public class SkierSpawner : MonoBehaviour {
 					SkiertoSpawn = MomSkier;
 				Quaternion SpawnRotation = new Quaternion ();
 				Instantiate (SkiertoSpawn, spawnPosition, SpawnRotation);
-				yield return new WaitForSeconds (spawnWait);
+				yield return new WaitForSeconds (MidWaveSpawnTimeGap);
 				}
 			WaveCounter++;
-			yield return new WaitForSeconds (waveWait);
+			yield return new WaitForSeconds (TimeBetweenWaves);
 		}
 	}
 }
