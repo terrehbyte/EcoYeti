@@ -20,15 +20,17 @@ public class BirdNest : MonoBehaviour {
 				} else if (nestHealth == 0) {
 						bool Eggs = false;
 				}*/
-
-		for (int i =0; i < Eggs.Count; i++)
-		{
-			if (Eggs[i])
-			{
-				Destroy(Eggs[i]);
-				break;
-			}
-		}
+        if (other.gameObject.tag == "Skier")
+        { 
+		    for (int i =0; i < Eggs.Count; i++)
+		    {
+			    if (Eggs[i])
+			    {
+				    Destroy(Eggs[i]);
+				    break;
+			    }
+		    }
+        }
 	}
 
 	// Use this for initialization

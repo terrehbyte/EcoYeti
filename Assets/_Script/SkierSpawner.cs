@@ -3,18 +3,15 @@ using System.Collections;
 
 public class SkierSpawner : MonoBehaviour {
 
+    // Prefabs
 	public GameObject BasicSkier;
 	public GameObject FastSkier;
 	public GameObject BadSkier;
 	public GameObject MomSkier;
-	public GameObject BasicSkierMask;
-	public Vector3 spawnValues;
-	public GameObject SkierSpawner1;
-	public GameObject SkierSpawner2;
-	public GameObject SkierSpawner3;
-	public GameObject SkierSpawner4;
-	public GameObject SkierSpawner5;
-	public GameObject SkierSpawner6;
+
+    public Transform SpawnValues;       // Spawn point
+
+    // Round Parameters
 	public int hazardCount;
 	public float spawnWait;
 	public float startWait;
@@ -26,6 +23,7 @@ public class SkierSpawner : MonoBehaviour {
 	public bool BadEnabled = false;
 	public bool MotherEnabled = false;
 
+    public float XVariance = 12f;
 
 	// Use this for initialization
 	void Start () {
@@ -93,7 +91,8 @@ public class SkierSpawner : MonoBehaviour {
 			Debug.Log("Spawn Limit is" + SpawnLimit);
 
 			for (int i = 0; i < hazardCount; i++) {
-				Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+                Debug.Log(SpawnValues.position.x);
+                Vector3 spawnPosition = new Vector3(Random.Range(-XVariance, XVariance), SpawnValues.position.y, SpawnValues.position.z);
 				RandomPick = Random.Range (1, SpawnLimit + 1);
 				if (RandomPick == 1)
 					SkiertoSpawn = BasicSkier;
