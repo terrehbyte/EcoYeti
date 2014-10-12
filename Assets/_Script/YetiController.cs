@@ -5,7 +5,11 @@ public class YetiController : MonoBehaviour
 {
     public float MoveSpeed = 5;
 
+    [SerializeField]
     private float rayLength = 10;
+
+    [SerializeField]
+    private float MoveTowardsDelta = 0.1f;
     
 
     Vector3 AcceptInput()
@@ -20,7 +24,7 @@ public class YetiController : MonoBehaviour
 
     void keepToGround()
     {
-        Ray downRay = new Ray(transform.position, -Vector3.up);
+        Ray downRay = new Ray(transform.position, -Vector3.up * rayLength);
         RaycastHit[] hitInfo = Physics.RaycastAll(downRay, rayLength);
         Vector3 target = Vector3.zero;
         float distance = 0f;
@@ -37,7 +41,7 @@ public class YetiController : MonoBehaviour
 
         if (target != Vector3.zero && distance != 0f)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target, 0.1f);
+            transform.position = Vector3.MoveTowards(transform.position, target, MoveTowardsDelta);
         }
     }
 
@@ -56,7 +60,7 @@ public class YetiController : MonoBehaviour
         
         keepToGround();
 
-        rigidbody.AddForce(Physics.gravity, ForceMode.Force);
+        rigidbody.AddForce(Physics.gravity, ForceMode.Acceleration);
 
         // Rie Tanaka
         // Kugimiya Rie
