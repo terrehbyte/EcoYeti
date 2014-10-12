@@ -38,6 +38,12 @@ public class BirdNest : MonoBehaviour {
 				    Destroy(Eggs[i]);
 					MainManager.EggCount--;
 					MainManager.SetCountText();
+
+					if (MainManager.EggCount <= 0)
+					{
+						Application.LoadLevel (3);
+					}
+
 				    break;
 			    }
 		    }
