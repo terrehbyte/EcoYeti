@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: ef3839c890ff0234f9f78ebf17e3606a
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: chest
+    100004: fingejoint2
+    100006: fingejoint2 1
+    100008: fingejoint2 2
+    100010: fingejoint2 3
+    100012: fingejoint3
+    100014: fingejoint4
+    100016: finger1
+    100018: finger1 1
+    100020: finger2
+    100022: finger2 1
+    100024: finger3
+    100026: finger3 1
+    100028: fingerjoint3
+    100030: fingerjoint3 1
+    100032: fingerjoint3 2
+    100034: fingerjoint3 3
+    100036: fingerjoint4
+    100038: fingerjoint5
+    100040: head
+    100042: left_arm_2
+    100044: left_foot1
+    100046: left_hand
+    100048: left_leg2
+    100050: lower_left_arm_2
+    100052: lower_left_leg_2
+    100054: lower_right_arm_1
+    100056: lower_right_leg_1
+    100058: neck
+    100060: person2
+    100062: right_arm_1
+    100064: right_foot
+    100066: right_hand1
+    100068: right_leg1
+    100070: stomach
+    400000: //RootNode
+    400002: chest
+    400004: fingejoint2
+    400006: fingejoint2 1
+    400008: fingejoint2 2
+    400010: fingejoint2 3
+    400012: fingejoint3
+    400014: fingejoint4
+    400016: finger1
+    400018: finger1 1
+    400020: finger2
+    400022: finger2 1
+    400024: finger3
+    400026: finger3 1
+    400028: fingerjoint3
+    400030: fingerjoint3 1
+    400032: fingerjoint3 2
+    400034: fingerjoint3 3
+    400036: fingerjoint4
+    400038: fingerjoint5
+    400040: head
+    400042: left_arm_2
+    400044: left_foot1
+    400046: left_hand
+    400048: left_leg2
+    400050: lower_left_arm_2
+    400052: lower_left_leg_2
+    400054: lower_right_arm_1
+    400056: lower_right_leg_1
+    400058: neck
+    400060: person2
+    400062: right_arm_1
+    400064: right_foot
+    400066: right_hand1
+    400068: right_leg1
+    400070: stomach
+    2300000: chest
+    2300002: fingejoint2
+    2300004: fingejoint2 1
+    2300006: fingejoint2 2
+    2300008: fingejoint2 3
+    2300010: fingejoint3
+    2300012: fingejoint4
+    2300014: finger1
+    2300016: finger1 1
+    2300018: finger2
+    2300020: finger2 1
+    2300022: finger3
+    2300024: finger3 1
+    2300026: fingerjoint3
+    2300028: fingerjoint3 1
+    2300030: fingerjoint3 2
+    2300032: fingerjoint3 3
+    2300034: fingerjoint4
+    2300036: fingerjoint5
+    2300038: head
+    2300040: left_arm_2
+    2300042: left_foot1
+    2300044: left_leg2
+    2300046: lower_left_arm_2
+    2300048: lower_left_leg_2
+    2300050: lower_right_arm_1
+    2300052: lower_right_leg_1
+    2300054: neck
+    2300056: person2
+    2300058: right_arm_1
+    2300060: right_foot
+    2300062: right_leg1
+    2300064: stomach
+    3300000: chest
+    3300002: fingejoint2
+    3300004: fingejoint2 1
+    3300006: fingejoint2 2
+    3300008: fingejoint2 3
+    3300010: fingejoint3
+    3300012: fingejoint4
+    3300014: finger1
+    3300016: finger1 1
+    3300018: finger2
+    3300020: finger2 1
+    3300022: finger3
+    3300024: finger3 1
+    3300026: fingerjoint3
+    3300028: fingerjoint3 1
+    3300030: fingerjoint3 2
+    3300032: fingerjoint3 3
+    3300034: fingerjoint4
+    3300036: fingerjoint5
+    3300038: head
+    3300040: left_arm_2
+    3300042: left_foot1
+    3300044: left_leg2
+    3300046: lower_left_arm_2
+    3300048: lower_left_leg_2
+    3300050: lower_right_arm_1
+    3300052: lower_right_leg_1
+    3300054: neck
+    3300056: person2
+    3300058: right_arm_1
+    3300060: right_foot
+    3300062: right_leg1
+    3300064: stomach
+    4300000: head
+    4300002: neck
+    4300004: finger3
+    4300006: fingejoint4
+    4300008: fingerjoint4
+    4300010: finger2
+    4300012: fingejoint3
+    4300014: fingerjoint5
+    4300016: finger1
+    4300018: fingejoint2
+    4300020: fingerjoint3
+    4300022: lower_right_arm_1
+    4300024: right_arm_1
+    4300026: finger1
+    4300028: fingejoint2
+    4300030: fingerjoint3
+    4300032: finger2
+    4300034: fingejoint2
+    4300036: fingerjoint3
+    4300038: finger3
+    4300040: fingejoint2
+    4300042: fingerjoint3
+    4300044: lower_left_arm_2
+    4300046: left_arm_2
+    4300048: chest
+    4300050: stomach
+    4300052: left_foot1
+    4300054: lower_left_leg_2
+    4300056: left_leg2
+    4300058: right_foot
+    4300060: lower_right_leg_1
+    4300062: right_leg1
+    4300064: person2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
