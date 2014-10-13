@@ -15,7 +15,7 @@ public class BirdNest : MonoBehaviour {
 
 
 
-	void OnCollisionEnter(Collision other)
+	void OnTriggerEnter(Collider other)
 	{
 				/*nestHealth -= 1;
 				lastCollisionTime = DateTime.Now.Second;
