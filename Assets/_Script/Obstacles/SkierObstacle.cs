@@ -7,12 +7,12 @@ public class SkierObstacle : MonoBehaviour
     {
         if (other.gameObject.tag == "Skier")
         {
-            var SkiControl = GetComponent<BaseSkierController>();
+            var SkiControl = GetComponent<BaseSkierCtrl>();
 
             // Call death on the skier
             if (SkiControl)
             {
-                SkiControl.Die(BaseSkierController.DeathReason.OBSTACLE);
+                //SkiControl.Die(BaseSkierCtrl.DeathReason.OBSTACLE);
             }
         }
     }

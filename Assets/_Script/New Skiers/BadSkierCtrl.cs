@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BadSkierCtrl : BaseSkierController
+public class BadSkierCtrl : BaseSkierCtrl
 {
     public float XVariance;
     public float SpeedModifier;
@@ -25,7 +25,7 @@ public class BadSkierCtrl : BaseSkierController
         }	
     }
 
-    public override void Die(BaseSkierController.DeathReason reason)
+    public override void Die(BaseSkierCtrl.DeathReason reason)
     {
         base.Die(reason);
     }

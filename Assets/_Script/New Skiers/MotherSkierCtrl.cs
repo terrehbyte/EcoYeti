@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MotherSkierCtrl : BaseSkierController
+public class MotherSkierCtrl : BaseSkierCtrl
 {
     public int ChildrenCharges;
     public int ChanceOfSpawn;
@@ -39,7 +39,7 @@ public class MotherSkierCtrl : BaseSkierController
         }	
     }
 
-    public override void Die(BaseSkierController.DeathReason reason)
+    public override void Die(BaseSkierCtrl.DeathReason reason)
     {
         base.Die(reason);
     }

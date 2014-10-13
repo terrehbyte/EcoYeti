@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(Rigidbody))]   // requires rigidbody
-public class FastSkierCtrl : BaseSkierController
+public class FastSkierCtrl : BaseSkierCtrl
 {
     public int MovementMultiplier;
 
@@ -19,7 +19,7 @@ public class FastSkierCtrl : BaseSkierController
         base.ProcTriggerZone(other);
     }
 
-    public override void Die(BaseSkierController.DeathReason reason)
+    public override void Die(BaseSkierCtrl.DeathReason reason)
     {
         base.Die(reason);
     }

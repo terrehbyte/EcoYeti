@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BaseSkierController : MonoBehaviour
+public class BaseSkierCtrl : MonoBehaviour
 {
     public AudioSource SoundSource; // 
     public AudioClip DeathSound;
