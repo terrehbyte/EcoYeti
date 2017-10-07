@@ -20,7 +20,7 @@ public class MotherSkierCtrl : BaseSkierCtrl
         base.ProcTriggerZone(other);
         if (other.gameObject.tag == "TriggerZone")
         {
-            var CurrentPosition = rigidbody.transform.position;
+            var CurrentPosition = GetComponent<Rigidbody>().transform.position;
             Quaternion SpawnRotation = new Quaternion();
 
             if (ChildrenCharges > 0)

@@ -16,7 +16,7 @@ public class MotherSkierController : MonoBehaviour
 	{
 		if (other.gameObject.tag == "TriggerZone") 
 		{
-			CurrentPosition = rigidbody.transform.position;
+			CurrentPosition = GetComponent<Rigidbody>().transform.position;
 			Quaternion SpawnRotation = new Quaternion();
 
 				if (ChildrenCharges > 0)

@@ -21,7 +21,7 @@ public class BadSkierCtrl : BaseSkierCtrl
             Vector3 movement = new Vector3(Random.Range(-XVariance, XVariance), 0.0f, 0.0f);
             Vector3 forceVector = movement * SpeedModifier;
             Debug.Log("Force!" + forceVector);
-            rigidbody.AddForce(forceVector);
+            GetComponent<Rigidbody>().AddForce(forceVector);
         }	
     }
 

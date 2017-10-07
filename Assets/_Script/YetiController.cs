@@ -41,7 +41,7 @@ public class YetiController : MonoBehaviour
 
         for (int i = 0; i < hitInfo.Length; i++)
         {
-            if (hitInfo[i].collider != collider)
+            if (hitInfo[i].collider != GetComponent<Collider>())
             {
                 target = hitInfo[i].point;
                 distance = hitInfo[i].distance;
@@ -63,14 +63,14 @@ public class YetiController : MonoBehaviour
         Vector3 newVel = Vector3.zero;
 
         newVel.x = input.x * MoveSpeed;
-        newVel.y = rigidbody.velocity.y;
+        newVel.y = GetComponent<Rigidbody>().velocity.y;
         newVel.z = input.z * MoveSpeed;
 
-        rigidbody.velocity = newVel;
+        GetComponent<Rigidbody>().velocity = newVel;
         
         keepToGround();
 
-        rigidbody.AddForce(Physics.gravity, ForceMode.Acceleration);
+        GetComponent<Rigidbody>().AddForce(Physics.gravity, ForceMode.Acceleration);
 
         // Rie Tanaka
         // Kugimiya Rie
